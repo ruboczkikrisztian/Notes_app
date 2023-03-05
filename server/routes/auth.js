@@ -55,6 +55,9 @@ router.get('/login-failure', (req, res) => {
   res.send('Valami nem sikerült :( ...');
 });
 
+
+
+
 // Destroy user session
 router.get('/logout', (req, res) => {
   req.session.destroy(error => {
